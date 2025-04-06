@@ -1,0 +1,51 @@
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Clerk Dropdown Customization */
+.cl-userButtonPopover {
+  background: #f8f9fa !important; /* Light background */
+  border: 1px solid #d1d1d1 !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+/* User Info (Top Section) */
+.cl-userButtonPopover .cl-userButtonPopoverUser {
+  background: #ffffff !important; /* White background */
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* User Name */
+.cl-userButtonPopover .cl-userButtonPopoverUser .cl-userButtonPopoverPrimaryIdentifier {
+  font-weight: bold !important;
+  color: #333 !important; /* Darker text */
+}
+
+/* Manage Account & Sign Out Buttons */
+.cl-userButtonPopover .cl-list {
+  background: #ffffff !important;
+}
+
+/* Each Option in Dropdown */
+.cl-userButtonPopover .cl-listItem {
+  font-weight: bold !important;
+  color: #333 !important;
+  padding: 10px 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.cl-userButtonPopover .cl-listItem:hover {
+  background: #e2e6ea !important; /* Light hover */
+}
+
+/* Clerk "Powered by" Section */
+.cl-userButtonPopoverFooter {
+  background: #f8f9fa !important;
+  font-size: 12px;
+  color: #666 !important;
+}

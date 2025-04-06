@@ -1,0 +1,15 @@
+.error-boundary {
+    padding: 2rem;
+    text-align: center;
+    color: #dc3545;
+  }
+  
+  .error-boundary button {
+    padding: 0.5rem 1rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }

@@ -1,0 +1,164 @@
+/* General Header Styling */
+.header {
+  background: linear-gradient(135deg, #1a1c20, #2d3035);
+  padding: 0.75rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand & Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.brand:hover {
+  transform: scale(1.03);
+}
+.logo {
+  height: 42px;
+  margin-right: 10px;
+}
+.brand-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Search Form */
+.search-form {
+  flex-grow: 1;
+  max-width: 600px;
+  width: 100%;
+}
+.search-icon {
+  background: #0d6efd;
+  color: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.search-bar {
+  background-color: #2e2e33;
+  color: white;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-left: 10px;
+}
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.4);
+}
+
+/* Auth Buttons Section */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Library Button */
+.library-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  border-color: gold;
+}
+.library-btn:hover {
+  background-color: gold;
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Sign In Button (Improved Look) */
+.sign-in-btn {
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.45rem 1.1rem;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.sign-in-btn:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  color: white;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+}
+
+/* UserButton */
+.auth-buttons .cl-userButton-root {
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+
+  .search-form {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .brand-text {
+    font-size: 1.3rem;
+  }
+
+  .library-btn,
+  .sign-in-btn {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
+  .brand-text {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .auth-buttons {
+    gap: 8px;
+  }
+
+  .library-btn,
+  .sign-in-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 0.4rem 0;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .logo {
+    height: 30px;
+    margin-right: 0;
+  }
+}

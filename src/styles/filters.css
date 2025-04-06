@@ -1,0 +1,120 @@
+/* Variables for consistent theming */
+:root {
+  --bg-dark: #252526;
+  --bg-darker: #1c1c1e;
+  --bg-gray: #333;
+  --bg-light-gray: #444;
+  --accent-blue: #0d6efd;
+  --accent-dark-blue: #084298;
+  --text-light: #eee;
+  --text-gray: #ddd;
+}
+
+/* Base Filter Styles */
+.filters {
+  padding: 15px;
+  background: var(--bg-dark);
+  border-radius: 10px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group h4 {
+  font: 600 16px/1.5 sans-serif;
+  color: var(--text-gray);
+  margin: 0 0 5px;
+}
+
+/* Shared Scrollable Container */
+.filter-scroll,
+.year-filter-options {
+  background: var(--bg-gray);
+  padding: 12px;
+  border-radius: 5px;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #555 var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Year Filter Specific */
+.year-filter-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-height: 250px; /* 2 rows */
+}
+
+/* Checkbox Styles */
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg-light-gray);
+  border-radius: 4px;
+  cursor: pointer;
+  font: 14px/1.5 sans-serif;
+  color: var(--text-light);
+  transition: background 0.2s;
+  margin: 0;
+  width: 100%;
+}
+
+.filter-checkbox:hover {
+  background: #555;
+}
+
+.filter-checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-blue);
+  cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Reset Button */
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font: bold 15px/1 sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background: var(--accent-dark-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filters {
+    max-width: 100%;
+  }
+}

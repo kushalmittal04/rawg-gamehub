@@ -1,0 +1,206 @@
+/* Game Details Page */
+.game-details-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+}
+
+/* Header Section */
+.game-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Bookmark + Rating Section */
+.rating-bookmark-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.rating-badge {
+  background: linear-gradient(135deg, #f1c40f, #e67e22);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bookmark Button */
+.bookmark-btn {
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.bookmark-btn:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+.bookmark-btn.bookmarked {
+  color: #ffd700;
+}
+
+.bookmark-btn.large {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.bookmark-btn.normal {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.bookmark-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Carousel */
+.carousel {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.1);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #0d6efd;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+/* Meta Section */
+.meta-section {
+  margin-bottom: 1.5rem;
+}
+
+.meta-section h3 {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.description-section {
+  line-height: 1.8;
+}
+
+.description-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 0.5rem;
+}
+
+.description-section p {
+  margin-bottom: 1rem;
+}
+
+/* Badges */
+.genre-badge {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 0.5rem 1rem;
+}
+
+.platform-badge {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  padding: 0.5rem 1rem;
+}
+
+.developer-badge,
+.publisher-badge {
+  background: linear-gradient(135deg, #333, #666);
+  padding: 0.5rem 1rem;
+}
+
+.tag-badge {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 0.5rem 1rem;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.error-message {
+  color: #ff6b6b;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-details-container {
+    padding: 1rem;
+  }
+
+  .game-title {
+    font-size: 1.8rem;
+  }
+
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rating-bookmark-wrapper {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .bookmark-btn.large {
+    font-size: 0.95rem;
+  }
+}

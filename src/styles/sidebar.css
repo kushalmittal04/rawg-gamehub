@@ -1,0 +1,36 @@
+.sidebar {
+  width: 300px; /* Sidebar width */
+  background: #252526;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+  width: 50px; /* When collapsed */
+  padding: 10px;
+  overflow: hidden;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  margin-top: 10px;
+}
+
+.sidebar-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 5px;
+}
