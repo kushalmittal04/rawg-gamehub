@@ -1,4 +1,4 @@
-# 🎮 MediaAMP GameHub
+# 🎮 GameHub unsing Rawg and Clerk 
 
 ## 📌 Project Overview
 
@@ -98,7 +98,7 @@ Upon clicking a game card, users are directed to a dedicated detail page with:
 
 ## 🔗 Live Deployment
 
-🌐 View Live: [https://mediaamp-gamehub.vercel.app](https://mediaamp-gamehub.vercel.app)
+🌐 View Live: [https://rawg-gamehub.vercel.app](https://rawg-gamehub.vercel.app)
 
 ---
 
@@ -115,7 +115,7 @@ Upon clicking a game card, users are directed to a dedicated detail page with:
 
 ```bash
 # Clone the repo
-git clone https://github.com/kushalmittal04/mediaamp-gamehub
+git clone https://github.com/kushalmittal04/rawg-gamehub
 cd rawg-gamehub
 
 # Install dependencies
