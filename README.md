@@ -98,7 +98,9 @@ Upon clicking a game card, users are directed to a dedicated detail page with:
 
 ## 🔗 Live Deployment
 
-🌐 View Live: [https://rawg-gamehub.vercel.app](https://rawg-gamehub.vercel.app)
+🌐 View Live: 
+Link1: [https://rawg-gamehub-mwjs-git-main-kushal-mittals-projects.vercel.app/](https://rawg-gamehub-mwjs-git-main-kushal-mittals-projects.vercel.app/)
+Link2: [https://rawg-gamehub-mwjs.vercel.app/](https://rawg-gamehub-mwjs.vercel.app/)
 
 ---
 
