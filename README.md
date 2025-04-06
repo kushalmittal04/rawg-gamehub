@@ -1,135 +1,125 @@
-# 🎮 GameHub unsing Rawg and Clerk 
+# 🎮 GameHub using RAWG API & Clerk
 
 ## 📌 Project Overview
 
-This project is a front-end application built using **React**, designed to fetch and display game data from the [RAWG Video Games Database API](https://rawg.io/apidocs). The goal is to assess a developer’s ability to build a **responsive**, **feature-rich**, and **user-authenticated** web application using the following tech stack:
+This is a front-end web application built using **React**, designed to fetch and display game data from the [RAWG Video Games Database API](https://rawg.io/apidocs). It demonstrates the ability to build a **responsive**, **feature-rich**, and **user-authenticated** application using modern technologies.
 
 ### 🔧 Tech Stack
 - React
-- React-Bootstrap
-- Bootstrap
-- Vanilla CSS
-- Redux (for state management)
+- Redux Toolkit (for state management)
 - Clerk Auth (for authentication)
+- React-Bootstrap & Bootstrap
+- Vanilla CSS
 
 ---
 
-## 🚀 Features & Implementation Steps
+## 🚀 Features & Implementation
 
 ### 1. 🏠 Main Page Layout
-The homepage includes:
-- **Header**:  
+- **Header**  
   - Site logo  
-  - Search bar  
-  - "Library/Bookmark" section for saved games  
-- **Sidebar (Left Panel)**:  
+  - Real-time search bar  
+  - "Library / Bookmarks" (for saved games, visible only to logged-in users)  
+- **Sidebar (Left Panel)**  
   - Filters by category, tags, year, and popularity  
-- **Game Cards Grid** (Main Section):  
-  - Game image  
-  - Description  
-  - Tags  
-  - Category  
-  - Ratings  
+- **Game Grid**  
+  - Game cards with image, title, ratings, tags, etc.
 
 ---
 
 ### 2. 🧮 Filtering System
-Implement dynamic filters that allow users to refine game results based on:
+Users can filter game results by:
 - Categories
 - Tags
 - Release Year
-- Popularity (e.g., rating)
+- Popularity (rating)
 
 ---
 
-### 3. 🔍 Search Functionality
-- Users can search for games by name.
-- Results should **update in real time** as the user types.
+### 3. 🔍 Real-Time Search
+- Dynamic search bar to find games by name.
+- Updates results live as the user types.
 
 ---
 
 ### 4. 📄 Pagination
-- Implement pagination to handle large datasets.
-- Users can navigate between pages using intuitive pagination controls.
+- Efficient pagination to browse large game datasets.
+- User-friendly navigation between pages.
 
 ---
 
 ### 5. 🎯 Game Detail Page
-Upon clicking a game card, users are directed to a dedicated detail page with:
-- Game Title
-- Full Description
+Clicking on a game opens a detail page showing:
+- Game title
+- Full description
 - Screenshots
-- Pricing info (if available)
 - Ratings
-- System Requirements
+- System requirements
+- Price info (if available)
 
 ---
 
-### 6. 🔐 User Authentication with Clerk
-- Integrate [Clerk Auth](https://clerk.dev/) for:
+### 6. 🔐 Authentication (Clerk)
+- Integrated [Clerk Auth](https://clerk.dev/) for:
   - Sign-up
-  - Log-in
-  - Log-out
-- Access to the **Library/Bookmark** section should be restricted to authenticated users only.
+  - Login
+  - Logout
+- Bookmark/Library page is **only** accessible to signed-in users.
 
 ---
 
-### 7. 🧠 State Management with Redux
-- Use Redux to manage:
-  - Game listings
-  - Filters
-  - Bookmarked games
-- Bookmarked games persist across sessions using `localStorage`.
+### 7. 🧠 State Management (Redux)
+- Game listings, filters, and bookmarks are managed using Redux.
+- Bookmarked games are persisted via `localStorage`.
 
 ---
 
-## 📱 Responsiveness & Design
-- The UI is **fully responsive** across all device sizes.
-- Open-ended design – feel free to showcase creativity while maintaining usability and accessibility.
+## 📱 Responsive Design
+- Mobile-first and fully responsive across all device sizes.
+- Clean and creative layout with dark mode styling.
 
 ---
 
-## ✅ Best Practices
-- Use **React functional components** and **Hooks**
-- Follow clean code standards for readability and maintainability
-- Maintain proper component and state management structure
-
----
-
-## 🔗 Live Deployment
-
-🌐 View Live: 
-Link1: [https://rawg-gamehub-mwjs-git-main-kushal-mittals-projects.vercel.app/](https://rawg-gamehub-mwjs-git-main-kushal-mittals-projects.vercel.app/)
-Link2: [https://rawg-gamehub-mwjs.vercel.app/](https://rawg-gamehub-mwjs.vercel.app/)
+## ✅ Best Practices Followed
+- React functional components and Hooks
+- Organized component hierarchy
+- Clean code, reusable logic, and readable structure
+- Secure handling of API keys via `.env`
 
 ---
 
 ## 💡 Author
 
 **Kushal Mittal**  
-📧 Email: kushalmittal2022@gamil.com  
+📧 Email: kushalmittal2022@gmail.com  
 💼 LinkedIn: [linkedin.com/in/kushalmittal04](https://www.linkedin.com/in/kushalmittal04)  
 🧑‍💻 GitHub: [@kushalmittal04](https://github.com/kushalmittal04)
 
 ---
 
-## 📂 Locally Project Setup
+## 🔗 Live Deployment
+
+🌐 Live Demo:  
+- [Link 1 (main deployment)](https://rawg-gamehub-mwjs.vercel.app/)
+- [Link 2 (branch deployment)](https://rawg-gamehub-mwjs-git-main-kushal-mittals-projects.vercel.app/)  
+
+---
+## 📂 Local Development Setup
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/kushalmittal04/rawg-gamehub
 cd rawg-gamehub
 
 # Install dependencies
 npm install
+
+# Additionally install essential packages
 npm install react-router-dom react-redux bootstrap @reduxjs/toolkit @clerk/themes @clerk/clerk-react react-bootstrap react-icons
 
-# Add your own RAWG API Key and Clerk credentials in the `.env` file
-# Create a .env file in root and paste your keys like below:
+# Add your own API keys in a .env file at the root:
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
 VITE_RAWG_API_KEY=your_rawg_api_key_here
 
-# Run the app
+# Run the application locally
 npm run dev
-
-
