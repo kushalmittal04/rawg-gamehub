@@ -116,7 +116,7 @@ Upon clicking a game card, users are directed to a dedicated detail page with:
 ```bash
 # Clone the repo
 git clone https://github.com/kushalmittal04/mediaamp-gamehub
-cd mediaamp-gamehub
+cd rawg-gamehub
 
 # Install dependencies
 npm install
